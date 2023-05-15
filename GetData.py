@@ -38,9 +38,9 @@ def get_data():
     stock_df = extract_stock_data(stock_url)
     stock_df['Date'] = pd.to_datetime(stock_df['Date'])
 
-    forex_df = extract_forex_data(forex_url)
-    forex_df['Date'] = pd.to_datetime(forex_df['Date'])
+    # forex_df = extract_forex_data(forex_url)
+    # forex_df['Date'] = pd.to_datetime(forex_df['Date'])
 
-    merged_df = pd.merge(stock_df, forex_df, on='Date', how='inner')
+    # merged_df = pd.merge(stock_df, forex_df, on='Date', how='inner')
 
-    return merged_df
+    return stock_df
