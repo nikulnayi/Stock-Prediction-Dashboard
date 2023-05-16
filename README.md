@@ -13,15 +13,15 @@ This project aims to predict stock prices using the Prophet model. It includes a
 ## Installation
 
 1. Clone the repository:
-
+`git clone https://github.com/your-username/stock-price-prediction.git`
 2. Change to the project directory:
-
+`cd stock-price-prediction`
 3. Install the required dependencies:
-
+`pip install -r requirements.txt`
 ## Usage
 
 1. Run the Streamlit app:
-`git clone https://github.com/your-username/stock-price-prediction.git`
+`streamlit run app.py`
 
 2. Open your web browser and navigate to `http://localhost:8501` to access the application.
 
