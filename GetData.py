@@ -32,8 +32,10 @@ def extract_forex_data(url):
     return pd.DataFrame(df)
 
 def get_data():
-    stock_url = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=TATAMOTORS.BSE&outputsize=full&apikey=4B0125QNRR7Q3KL4'
-    forex_url = 'https://www.alphavantage.co/query?function=FX_DAILY&from_symbol=USD&to_symbol=INR&outputsize=full&apikey=4B0125QNRR7Q3KL4'
+    #add your API key
+
+    stock_url = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=TATAMOTORS.BSE&outputsize=full&apikey=xxxxxxxxxxxx'
+    forex_url = 'https://www.alphavantage.co/query?function=FX_DAILY&from_symbol=USD&to_symbol=INR&outputsize=full&apikey=xxxxxxxxxxxx'
 
     stock_df = extract_stock_data(stock_url)
     stock_df['Date'] = pd.to_datetime(stock_df['Date'])
